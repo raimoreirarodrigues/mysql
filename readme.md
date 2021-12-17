@@ -4,8 +4,6 @@ Necessário ter o docker instalado e configurado na máquina
     
 ### Instalação
 
-Crie uma rede docker chamada desafio, caso não exista.
-
     //verifique se a rede desafio já existe.
     docker network ls
 
@@ -15,7 +13,7 @@ Crie uma rede docker chamada desafio, caso não exista.
     //Execute o comando para geração do container
     docker-compose build --no-cache
 
-Por fim, suba o docker com o banco MySQL:
+### Por fim, suba o docker com o banco MySQL:
     docker-compose up -d
 
 
