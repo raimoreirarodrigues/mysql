@@ -10,14 +10,17 @@ Necessário ter o docker instalado e configurado na máquina
     //Caso a rede não exista, digite o comando abaixo para criá-la
     docker network create -d bridge desafio
 
-    //Execute o comando para geração do container
-    docker-compose build --no-cache
-
     //Entre no diretório mysql
     cd mysql
 
-### Por fim, suba o docker com o banco MySQL:
+    //Execute o comando para geração do container
+    docker-compose build --no-cache
+
+    //suba o docker com o banco MySQL:
     docker-compose up -d
+
+    //Verifique se o ambiente do banco está em execução:
+    docker ps
 
 
 
