@@ -4,6 +4,9 @@ Necessário ter o docker instalado e configurado na máquina
     
 ### Instalação
 
+    //Clone o projeto
+    git clone https://github.com/raimoreirarodrigues/mysql.git
+    
     //verifique se a rede desafio já existe.
     docker network ls
 
