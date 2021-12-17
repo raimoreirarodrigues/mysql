@@ -13,6 +13,9 @@ Necessário ter o docker instalado e configurado na máquina
     //Execute o comando para geração do container
     docker-compose build --no-cache
 
+    //Entre no diretório mysql
+    cd mysql
+
 ### Por fim, suba o docker com o banco MySQL:
     docker-compose up -d
 
