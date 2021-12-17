@@ -1,0 +1,21 @@
+version: "Z"
+services:
+  desafio-mysql:
+    container_name: desafio-mysql
+    build: .
+    expose:
+      - "3306"
+    ports:
+      - "53306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=desafio
+      - MYSQL_DATABASE=desafio
+      - MYSQL_USER=desafio
+      - MYSQL_PASSWORD=desafio
+    volumes:
+      - ./volume/mysql:/var/lib/mysql
+      - ./volume/data:/var/data
+networks:
+  desafio:
+    external: true
+    name: desafio
