@@ -8,22 +8,22 @@ Necessário ter o docker instalado e configurado na máquina
     git clone https://github.com/raimoreirarodrigues/mysql.git
     
     //verifique se a rede desafio já existe.
-    docker network ls
+    sudo docker network ls
 
     //Caso a rede não exista, digite o comando abaixo para criá-la
-    docker network create -d bridge desafio
+    sudo docker network create -d bridge desafio
 
     //Entre no diretório mysql
     cd mysql
 
     //Execute o comando para geração do container
-    docker-compose build --no-cache
+    sudo docker-compose build --no-cache
 
     //suba o docker com o banco MySQL:
-    docker-compose up -d
+    sudo docker-compose up -d
 
     //Verifique se o ambiente do banco está em execução:
-    docker ps
+    sudo docker ps
 
 
 
