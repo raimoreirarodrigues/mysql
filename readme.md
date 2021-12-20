@@ -20,10 +20,10 @@ Necessário ter o docker instalado e configurado na máquina
     sudo docker-compose build --no-cache
 
     //suba o docker com o banco MySQL:
-    sudo docker-compose up -d
+    docker-compose up -d
 
     //Verifique se o ambiente do banco está em execução:
-    sudo docker ps
+    docker ps
 
 
 
